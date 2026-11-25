@@ -1,0 +1,70 @@
+FROM SECANT TO TANGENT — NARRATION SCRIPT
+Topic: derivative and rate of change for f(x) = x^2 at x = 2
+Approximate runtime: 5 minutes 9 seconds
+This transcript mirrors the narration text in _Code/scenes.py. The supplied video currently has a Flite synthetic voice; record these lines in your own voice if you plan to replace it.
+
+SCENE 1 — HOOK (00:00-00:34)
+
+[From secant to tangent]
+How steep is a curve at one point? On a straight line, we can pick any two points to find the slope. On a curve, the answer changes as we move one of those points. Watch what happens on this parabola.
+
+[How steep is the curve at P?]
+The blue curve is y equals x squared. Focus on the white point P, at two comma four. The orange line passes through P and a second point, Q. Sliding Q changes how steep that orange line is. Can one slope describe the curve right at P?
+
+SCENE 2 — CONCEPT INTRODUCTION (00:34-01:08)
+
+[One fixed point, one moving point]
+Write f of x equals x squared. P stays at two comma four. Call the horizontal step from P to Q, h. Then Q has x coordinate two plus h, and its height is f of two plus h. A positive h puts Q to the right.
+
+[A secant measures average change]
+A line through two distinct points on the curve is called a secant. Its slope is rise divided by run. The run here is h. The rise is the height at Q minus the height at P. In this video we will use that ratio to find the tangent slope.
+
+SCENE 3 — VISUAL INTUITION (01:08-02:17)
+
+[Start with a full unit to the right]
+Take h equal to one. Q is at three comma nine. The horizontal run is one, and the vertical rise is nine minus four, which is five. Dividing five by one gives a secant slope of five. Notice the orange rise and the purple run.
+
+[Move Q closer from the right]
+Now slide Q toward P until h is one tenth. The rise shrinks to zero point four one, and the run shrinks to zero point one. The new slope is four point one. Even though both changes are smaller, their ratio remains close to four.
+
+[Approach from the left, too]
+A negative h puts Q to the left of P. Start half a unit away, then stop one tenth away. At that last point the rise is negative zero point three nine. The run is negative zero point one. Their ratio is positive three point nine.
+
+[Both sides point toward the same slope]
+From the right we saw four point one. From the left we saw three point nine. Bringing Q even closer gives slopes nearer to four. That is numerical evidence for a limit. To show it exactly, we need a formula that works for every nonzero h.
+
+SCENE 4 — WORKED EXAMPLE (02:17-03:41)
+
+[Substitute the function]
+Start with the secant slope and replace the function values. At two plus h, the function value is the square of two plus h. At two, the function value is four. Subtract four from that square, then divide by the horizontal step h.
+
+[Expand the square]
+Multiply two plus h by itself. Two times two gives four. The two cross terms each give two h, so together they give four h. The remaining term is h squared. This expansion makes it possible to simplify the numerator.
+
+[Factor the numerator]
+The positive four and the negative four add to zero. That leaves four h plus h squared. Both terms contain h, so factor out h. The numerator becomes h times the quantity four plus h. The denominator is still h.
+
+[Simplify while h is nonzero]
+For every nonzero h, cancel the factor of h from the numerator and the denominator. The slope becomes four plus h. We are still working with two distinct points. At h equal to zero, the original secant ratio has zero in both the numerator and denominator.
+
+[Take the limit]
+As h approaches zero, four plus h approaches four from either side. By definition, this limit is the derivative of f at two, written f prime of two. The derivative is four. It gives the exact slope of the tangent line at P.
+
+SCENE 5 — INTERPRETATION (03:41-04:33)
+
+[Draw the tangent through P]
+The green line passes through two comma four and has slope four. Using point slope form, y minus four equals four times x minus two. Expanding and adding four gives y equals four x minus four. This is the tangent line at P.
+
+[What does a slope of 4 tell us?]
+Near P, the tangent predicts four units of change in height for each unit of change in x. For a small step of zero point one, it predicts a rise of zero point four. The actual rise on the parabola is zero point four one.
+
+[Why the tangent works locally]
+At x equal to two point one, the tangent gives four point four, while the curve gives four point four one. The difference is zero point zero one. In general the difference here is h squared. Halving the step makes that gap one quarter as large.
+
+SCENE 6 — SUMMARY & CREDITS (04:33-05:09)
+
+[Three ideas to take with you]
+First, the secant slope measures average change between two distinct points. Second, the derivative is the limit of secant slopes as the horizontal step approaches zero. Third, at x equal to two for x squared, that instantaneous slope is four.
+
+[Summary and credits]
+The blue curve and green tangent meet at two comma four. Their agreement near that point is what makes the tangent useful. The reference and production credits are on screen. To check your understanding, try explaining why we kept h nonzero before taking the limit.
